@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="TweetManagementSystem">
+        <dependent-module archiveName="frontend.war" deploy-path="/" handle="module:/resource/frontend/frontend">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="backend.jar" deploy-path="/" handle="module:/resource/backend/backend">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="twitter4j-core-4.0.7.jar" deploy-path="/lib" handle="module:/classpath/lib/C:/Users/hamiltonm/Documents/Tweetr4j/lib/twitter4j-core-4.0.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
