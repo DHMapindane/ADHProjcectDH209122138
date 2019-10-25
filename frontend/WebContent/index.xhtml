@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+	
+    <h:head>
+        <title>Tweet Management system</title>
+    </h:head>
+    <h:body>
+    	<h2>Please register to login</h2>
+    	<h:form>
+    		<h:panelGrid columns="2" >
+    		<h:outputLabel value="Name : "/>
+    	   <h:inputText value="#{tweetManagementController.register.name}"></h:inputText>
+    	   <h:outputLabel value="Surname : "/>
+    	   <h:inputText value="#{tweetManagementController.register.surname}"></h:inputText>
+    	   <h:outputLabel value="Email : "/>
+    	   <h:inputText value="#{tweetManagementController.register.email}"></h:inputText>
+    	   <h:outputLabel value="Password : "/>
+    	   <h:inputText value="#{tweetManagementController.register.password}"></h:inputText>
+    	   <h:outputLabel value="Conrfirm Password : "/>
+    	   <h:inputText value="#{tweetManagementController.register.confirmPassword}"></h:inputText>
+    	   <h:commandButton value="submit" action="#{tweetManagementController.registerNewUser}"></h:commandButton>
+    	   <h:commandLink value="Login" action="Login.xhtml"></h:commandLink>
+    	   </h:panelGrid>
+    	    <h:outputLabel value="#{tweetManagementController.getStringOutput()}"/>
+    	</h:form>
+    </h:body>
+</html>

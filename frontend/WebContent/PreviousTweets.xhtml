@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+	
+    <h:head>
+        <title>Tweet Management system</title>
+    </h:head>
+    <h:body>
+    	<h2>Previous tweet details Details</h2>
+        <h:form>
+    	<h:dataTable value ="#{tweetManagementController.getPreviousTweets()}" var = "tweets">
+    	<h:column>
+    	<f:facet name = "header">Twweet ID </f:facet>
+    	#{tweets.tweetID}
+    	</h:column>
+    	<h:column>
+    	<f:facet name = "header">Twweet body</f:facet>
+    	#{tweets.tweetBody}
+    	</h:column>
+    	<h:column>
+    	<f:facet name = "header">Tweet tweetdate</f:facet>
+    	#{tweets.tweetdate}
+    	</h:column>
+    	</h:dataTable>
+    	</h:form>
+    </h:body>
+</html>
